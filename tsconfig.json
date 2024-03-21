@@ -1,12 +1,6 @@
 {
+  "extends": "./.nitro/types/tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "esModuleInterop": true,
-    "target": "ESNext",
-    "moduleResolution": "node", // <-- Ensure this line is present with the correct value
-    "resolveJsonModule": true,
-    "outDir": ".output"
-  },
-  "include": ["server/**/*.ts"],
-  "exclude": ["node_modules"]
+    "lib": ["es2018", "dom"] 
+  }
 }
