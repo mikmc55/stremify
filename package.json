@@ -1,13 +1,12 @@
 {
-  "private": true,
+  "name": hy-ify",
+  "version": "1.0.0",
+  "description": "hstremify",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "nitro build",
-    "dev": "nitro dev --host",
-    "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
-  },
-  "devDependencies": {
-    "nitropack": "latest"
+    "start": "node dist/index.js",
+    "build": "tsc && npm run build:manifest",
+    "build:manifest": "ts-node functions/manifest.json.ts"
   },
   "dependencies": {
     "@movie-web/providers": "^2.2.2",
@@ -15,5 +14,15 @@
     "dotenv": "^16.4.5",
     "nitro-cors": "^0.7.0",
     "vm2": "^3.9.19"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.6.4"
+  },
+  "nitro": {
+    "preset": "nitro-dev",
+    "logLevel": 3
+  },
+  "private": true
 }
