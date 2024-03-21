@@ -1,4 +1,4 @@
-import { defineNitroConfig } from 'nitro/types/config';
+import { defineNitroConfig } from 'nitro';
 
 export default defineNitroConfig({
   preset: 'zeabur'
