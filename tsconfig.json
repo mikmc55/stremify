@@ -1,6 +1,10 @@
 {
   "extends": "./.nitro/types/tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./server"
-  }
+    "moduleResolution": "node",
+    "outDir": "./dist"
+  },
+  "include": [
+    "./**/*.ts"
+  ]
 }
