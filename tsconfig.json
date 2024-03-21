@@ -1,6 +1,7 @@
 {
   "extends": "./.nitro/types/tsconfig.json",
   "compilerOptions": {
-    "lib": ["es2018", "dom"] 
+    "moduleResolution": "node", // Specify the module resolution strategy here
+    "lib": ["es2018", "dom"] // Add "dom" to include browser types
   }
 }
