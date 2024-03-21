@@ -1,13 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "nitro build",
+    "build": "tsc",
     "dev": "nitro dev --host",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nitropack": "latest"
+    "nitropack": "latest",
+    "typescript": "^4.5.4"
   },
   "dependencies": {
     "@movie-web/providers": "^2.2.2",
