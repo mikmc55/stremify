@@ -1,5 +1,5 @@
-//https://nitro.unjs.io/config
+import { defineNitroConfig } from 'nitro/types/config';
 
 export default defineNitroConfig({
-  srcDir: "server"
+  preset: 'zeabur'
 });
